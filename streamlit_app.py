@@ -46,4 +46,4 @@ if prompt := st.chat_input("What is up?"):
 # Main code to run the chat interface
 if __name__ == "__main__":
     st.session_state.messages = []
-    chat_interface()
+    #chat_interface()
