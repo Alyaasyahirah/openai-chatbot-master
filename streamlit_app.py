@@ -29,7 +29,7 @@ if prompt := st.chat_input("What is up?"):
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         full_response = ""
-       def chat_interface():
+#       def chat_interface():
     prompt = st.text_input("What is up?")
     if prompt:
         st.session_state.messages.append({"role": "user", "content": prompt})
