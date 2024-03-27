@@ -27,7 +27,7 @@ if prompt := st.chat_input("What is up?"):
     st.markdown(prompt)
   with st.chat_message("assistant"):
     full_response = ""
-    for response in openai.ChatCompletion.create(
+    for response in openai.chatcompletion.create(
         model="gpt-3.5-turbo",
         messages=[{"role": m["role"], "content": m["content"]} for m in st.session_state.messages],
         stream=True
