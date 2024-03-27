@@ -33,4 +33,4 @@ if prompt := st.chat_input("What is up?"):
         stream=True
     ):
   #    st.markdown(response.choices[0].message.get("content", ""))
-        st.markdown(response.choices[0].message.content)
+        st.markdown response.choices[0].message.content
