@@ -42,8 +42,3 @@ if prompt := st.chat_input("What is up?"):
             ):
                 full_response += response.choices[0].message.get("content", "")
             st.markdown(full_response)
-
-# Main code to run the chat interface
-if __name__ == "__main__":
-    st.session_state.messages = []
-    #chat_interface()
