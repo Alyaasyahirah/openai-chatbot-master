@@ -34,7 +34,9 @@ if prompt := st.chat_input("What is up?"):
          #   messages = [{"role": m["role"], "content": m["content"]}
             messages=[{"role": m["role"], "content": m["content"]}]
                      # for m in st.session_state.messages], stream=True):
-                      for m in [st.session_state.messages], stream=True):
+                     # for m in [st.session_state.messages], stream=True):
+                     for m in st.session_state.messages:  # Corrected indentation and list usage
+    # Process each message 'm' here
             full_response += response.choices[0].delta.get("content", "")
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
