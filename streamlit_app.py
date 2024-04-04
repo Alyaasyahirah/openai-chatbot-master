@@ -2,7 +2,8 @@
 import openai
 import streamlit as st
 
-
+st.header('Hello ,Im Creative Idea', divider='rainbow')
+st.header('_Streamlit_ is :blue[cool] :sunglasses:')
 st.write('Hello, *World!* :sunglasses:')
 
 with st.sidebar:
