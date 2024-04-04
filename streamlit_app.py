@@ -6,6 +6,7 @@ import streamlit as st
 
 st.header('Im Creative Idea', divider='rainbow')
 st.write('Hello, *World!* :rose::hibiscus::sunflower::blossom:')
+st.write("you can choose age for appropriate creative content")
 st.divider()
 
 
@@ -15,7 +16,7 @@ st.slider("This is a slider", 0, 100, (15, 75))
 
 st.divider()  # 👈 Draws a horizontal rule
 
-st.write("you can choose age for appropriate creative content_italic_")
+st.write("you can choose age for appropriate creative content")
 
 st.divider()  # 👈 Another horizontal rule
 
