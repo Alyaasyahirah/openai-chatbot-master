@@ -35,7 +35,7 @@ if prompt := st.chat_input("What is up?"):
         messages.chat_message("user").write(prompt)
         messages.chat_message("assistant").write(f"Echo: {prompt}") #end
     full_response = ""
-    response = openai.chat.completions(
+    response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{"role": m["role"], "content": m["content"]} for m in st.session_state.messages],
             stream=True
