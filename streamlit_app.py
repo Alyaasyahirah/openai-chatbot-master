@@ -2,7 +2,7 @@
 import openai
 import streamlit as st
 
-st.header('Im Creative Idea', text='rainbow')
+st.header('Im Creative Idea', divider='rainbow')
 st.write('Hello, *World!* :rose::hibiscus::sunflower::blossom:')
 
 with st.sidebar:
