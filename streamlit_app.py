@@ -2,8 +2,22 @@
 import openai
 import streamlit as st
 
+
+
 st.header('Im Creative Idea', divider='rainbow')
 st.write('Hello, *World!* :rose::hibiscus::sunflower::blossom:')
+st.divider()
+
+
+st.write("range your age")
+
+st.slider("This is a slider", 0, 100, (15, 75))
+
+st.divider()  # 👈 Draws a horizontal rule
+
+st.write("This text is between the horizontal rules.")
+
+st.divider()  # 👈 Another horizontal rule
 
 with st.sidebar:
   st.title(' OpenAI Chatbot')
