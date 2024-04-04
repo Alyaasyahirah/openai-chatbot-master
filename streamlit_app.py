@@ -15,7 +15,7 @@ st.slider("This is a slider", 0, 100, (15, 75))
 
 st.divider()  # 👈 Draws a horizontal rule
 
-st.write("This text is between the horizontal rules.")
+st.write("you can choose age for appropriate creative content_italic_")
 
 st.divider()  # 👈 Another horizontal rule
 
