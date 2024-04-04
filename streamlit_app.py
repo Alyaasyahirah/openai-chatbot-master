@@ -3,7 +3,7 @@ import openai
 import streamlit as st
 
 st.header('Im Creative Idea', divider='rainbow')
-st.write('Hello, *World!* :sunglasses:')
+st.write('Hello, *World!* :rose::hibiscus::sunflower::blossom:')
 
 with st.sidebar:
   st.title(' OpenAI Chatbot')
@@ -30,9 +30,8 @@ if prompt := st.chat_input("What is up?"):
     st.markdown(prompt)
   with st.chat_message("assistant"):
 
-#start input chat
-  
-    if prompt := st.chat_input("Say something"):
+
+    if prompt := st.chat_input("Say something"):  #start input chat
         messages.chat_message("user").write(prompt)
         messages.chat_message("assistant").write(f"Echo: {prompt}") #end
     full_response = ""
