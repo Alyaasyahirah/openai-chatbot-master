@@ -29,6 +29,12 @@ if prompt := st.chat_input("What is up?"):
   with st.chat_message("user"):
     st.markdown(prompt)
   with st.chat_message("assistant"):
+
+with st.sidebar: #start input chat
+    messages = st.container(height=300)
+    if prompt := st.chat_input("Say something"):
+        messages.chat_message("user").write(prompt)
+        messages.chat_message("assistant").write(f"Echo: {prompt}") #end
     full_response = ""
     for response in openai.chat.completions.create(
        ):
