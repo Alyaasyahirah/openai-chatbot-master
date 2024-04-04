@@ -38,6 +38,6 @@ if prompt := st.chat_input("What is up?"):
     response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{"role": m["role"], "content": m["content"]} for m in st.session_state.messages],
-            stream=True
+            stream=False
         )
     st.markdown(response.choices[0].message.content)
