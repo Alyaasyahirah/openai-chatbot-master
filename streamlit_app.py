@@ -15,11 +15,6 @@ st.write("range your age")
 st.slider("This is a slider", 0, 100, (15, 75))
 
 st.divider()  # 👈 Draws a horizontal rule
-
-st.write("you can choose age for appropriate creative content")
-
-st.divider()  # 👈 Another horizontal rule
-
 with st.sidebar:
   st.title(' OpenAI Chatbot')
   if 'OPENAI_API_KEY' in st.secrets:
