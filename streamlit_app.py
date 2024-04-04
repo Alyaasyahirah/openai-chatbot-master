@@ -12,6 +12,9 @@ st.divider()
 st.slider("range your age", 0, 100, (15, 75))
 
 st.divider()  # 👈 Draws a horizontal rule
+
+age = st.slider('How old are you?', 0, 130, 25)
+st.write("I'm ", age, 'years old')
 with st.sidebar:
   st.title(' OpenAI Chatbot')
   if 'OPENAI_API_KEY' in st.secrets:
