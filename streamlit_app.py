@@ -9,10 +9,7 @@ st.write('Hello, *World!* :rose::hibiscus::sunflower::blossom:')
 st.write("you can choose age for appropriate creative content")
 st.divider()
 
-
-st.write("range your age")
-
-st.slider("This is a slider", 0, 100, (15, 75))
+st.slider("range your age", 0, 100, (15, 75))
 
 st.divider()  # 👈 Draws a horizontal rule
 with st.sidebar:
